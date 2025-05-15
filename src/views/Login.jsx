@@ -12,7 +12,7 @@ export function Login({ login }) {
     setError('')
 
     try {
-      const res = await fetch('http://localhost:3000/login', {
+      const res = await fetch('https://seguridadbackend-production.up.railway.app/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ usuario, password }),
